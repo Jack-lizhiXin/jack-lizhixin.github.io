@@ -11,8 +11,8 @@ PROFILE = json.loads((ROOT / "content/profile.json").read_text(encoding="utf-8")
 PAPERS = json.loads((ROOT / "content/publications.json").read_text(encoding="utf-8"))
 
 LABELS = {
-    "zh": {"about": "个人简介", "news": "近期动态", "research": "研究方向", "projects": "科研项目", "publications": "代表论文", "honors": "获奖荣誉", "service": "学术服务", "teaching": "教学与育人", "talks": "学术报告", "contact": "联系方式", "email": "电子邮箱", "office": "办公室", "institution": "所在单位", "scholarly": "学术主页", "all": "全部", "earlier": "2024及以前", "skip": "跳至正文", "language": "English", "top": "返回顶部", "official": "研究院个人页", "updated": "更新于", "keywords": "研究关键词", "paper": "论文", "code": "代码", "code_data": "代码与数据", "read": "相关报道", "bibliography": "完整书目见 DBLP", "download_bib": "下载 BibTeX", "filter": "按发表年份筛选论文"},
-    "en": {"about": "About", "news": "News", "research": "Research", "projects": "Projects", "publications": "Publications", "honors": "Honors", "service": "Service", "teaching": "Teaching", "talks": "Talks", "contact": "Contact", "email": "Email", "office": "Office", "institution": "Affiliation", "scholarly": "Profiles", "all": "All", "earlier": "2024 & earlier", "skip": "Skip to content", "language": "中文", "top": "Back to top", "official": "Institutional profile", "updated": "Updated", "keywords": "Research interests", "paper": "Paper", "code": "Code", "code_data": "Code & data", "read": "Event report", "bibliography": "Full bibliography on DBLP", "download_bib": "Download BibTeX", "filter": "Filter publications by year"}
+    "zh": {"about": "个人简介", "news": "近期动态", "research": "研究方向", "projects": "科研项目", "publications": "代表论文", "patents": "已授权专利", "honors": "获奖荣誉", "service": "学术服务", "teaching": "教学与育人", "talks": "学术报告", "contact": "联系方式", "email": "电子邮箱", "office": "办公室", "institution": "所在单位", "scholarly": "学术主页", "all": "全部", "earlier": "2024及以前", "skip": "跳至正文", "language": "English", "top": "返回顶部", "official": "研究院个人页", "updated": "更新于", "keywords": "研究关键词", "paper": "论文", "code": "代码", "code_data": "代码与数据", "read": "相关报道", "bibliography": "完整书目见 DBLP", "download_bib": "下载 BibTeX", "filter": "按发表年份筛选论文"},
+    "en": {"about": "About", "news": "News", "research": "Research", "projects": "Projects", "publications": "Publications", "patents": "Granted Patents", "honors": "Honors", "service": "Service", "teaching": "Teaching", "talks": "Talks", "contact": "Contact", "email": "Email", "office": "Office", "institution": "Affiliation", "scholarly": "Profiles", "all": "All", "earlier": "2024 & earlier", "skip": "Skip to content", "language": "中文", "top": "Back to top", "official": "Institutional profile", "updated": "Updated", "keywords": "Research interests", "paper": "Paper", "code": "Code", "code_data": "Code & data", "read": "Event report", "bibliography": "Full bibliography on DBLP", "download_bib": "Download BibTeX", "filter": "Filter publications by year"}
 }
 
 
@@ -34,13 +34,13 @@ def details(items, labels):
     rows = []
     for item in items:
         year = f'<span class="item-year">{esc(item["year"])}</span>' if item.get("year") else ""
-        link = " " + anchor(item["url"], labels["read"]) if item.get("url") else ""
+        link = " " + anchor(item["url"], item.get("link_label", labels["read"])) if item.get("url") else ""
         rows.append(f'<li><h3>{year}{esc(item["title"])}</h3><p>{esc(item["text"])}{link}</p></li>')
     return '<ul class="detail-list">' + "\n".join(rows) + '</ul>'
 
 
 def publications(lang, labels, prefix):
-    filters = ''.join(f'<button class="year-filter" type="button" data-year="{year}" aria-pressed="{str(year == "all").lower()}" aria-controls="publication-list">{esc(label)}</button>' for year, label in [("all", labels["all"]), ("2026", "2026"), ("2025", "2025"), ("earlier", labels["earlier"])])
+    filters = ''.join(f'<button class="year-filter" type="button" data-year="{year}" aria-pressed="{str(year == "all").lower()}" aria-controls="publication-list">{esc(label)}</button>' for year, label in [("all", labels["all"])] + [(str(year), str(year)) for year in sorted({p["year"] for p in PAPERS}, reverse=True)])
     count = f'显示 {len(PAPERS)} 篇代表论文' if lang == 'zh' else f'{len(PAPERS)} selected publications'
     toolbar = f'<div class="publication-toolbar"><div class="year-filters" role="group" aria-label="{esc(labels["filter"])}">{filters}</div><span id="publication-count" role="status" aria-live="polite" data-zh-template="显示 {{n}} 篇代表论文" data-en-template="{{n}} selected publications">{count}</span></div>'
     rows = []
@@ -72,11 +72,12 @@ def render(lang, prefix, canonical_path):
     research = '<ul class="research-list">' + ''.join(f'<li><h3>{esc(r["title"])}</h3><p>{esc(r["text"])}</p></li>' for r in p['research']) + '</ul>'
     contact = f'<p>{esc(p["contact_note"])}</p><dl class="contact-list"><dt>{esc(labels["email"])}</dt><dd>{anchor("mailto:" + PROFILE["email"], PROFILE["email"])}</dd><dt>{esc(labels["office"])}</dt><dd>{esc(p["office"])}</dd><dt>{esc(labels["institution"])}</dt><dd>{esc(p["affiliation"])}</dd><dt>{esc(labels["scholarly"])}</dt><dd>{anchor(PROFILE["dblp"], "DBLP")} · {anchor(PROFILE["orcid"], "ORCID")} · {anchor(PROFILE["github"], "GitHub")}</dd></dl>'
     content = about + section('news', labels['news'], news) + section('research', labels['research'], research) + section('projects', labels['projects'], details(p['projects'], labels)) + section('publications', labels['publications'], publications(lang, labels, prefix))
-    for key in ['honors', 'service', 'teaching', 'talks']:
+    for key in ['patents', 'honors', 'service', 'teaching', 'talks']:
         content += section(key, labels[key], details(p[key], labels))
     content += section('contact', labels['contact'], contact)
     structured = {"@context": "https://schema.org", "@type": "Person", "name": "Zhixin Li", "alternateName": "李智鑫", "jobTitle": PROFILE['en']['title'], "affiliation": {"@type": "Organization", "name": "Fudan University"}, "email": PROFILE['email'], "url": PROFILE['site_url'] + '/', "sameAs": [PROFILE['dblp'], PROFILE['orcid'], PROFILE['github'], PROFILE['institution_page']]}
-    photo_alt = '李智鑫在复旦大学' if lang == 'zh' else 'Zhixin Li at Fudan University'
+    structured_json = json.dumps(structured, ensure_ascii=False).replace('</', '<\\/')
+    photo_alt = '李智鑫' if lang == 'zh' else 'Zhixin Li'
     return f'''<!doctype html>
 <html lang="{'zh-CN' if lang == 'zh' else 'en'}">
 <head>
@@ -97,7 +98,7 @@ def render(lang, prefix, canonical_path):
   <link rel="alternate" hreflang="x-default" href="{PROFILE['site_url']}/">
   <link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="{prefix}assets/style.css">
-  <script type="application/ld+json">{json.dumps(structured, ensure_ascii=False).replace('</', '<\\/')}</script>
+  <script type="application/ld+json">{structured_json}</script>
   <script src="{prefix}assets/site.js" defer></script>
 </head>
 <body data-lang="{lang}" id="top">
@@ -109,7 +110,7 @@ def render(lang, prefix, canonical_path):
   </div></header>
   <div class="page-shell">
     <aside class="profile" aria-label="{'个人信息' if lang == 'zh' else 'Profile'}">
-      <img class="profile-photo" src="{prefix}assets/zhixin-li.jpg" width="2048" height="3072" alt="{photo_alt}" fetchpriority="high">
+      <img class="profile-photo" src="{prefix}assets/zhixin-li.png" width="1002" height="982" alt="{photo_alt}" fetchpriority="high">
       <h2 class="profile-name">{esc(p['name'])}</h2>
       <p class="profile-name-en">{esc(p['other_name'])}</p>
       <p class="profile-position">{esc(p['title'])}</p>

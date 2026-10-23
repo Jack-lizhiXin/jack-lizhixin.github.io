@@ -17,8 +17,8 @@
     ],
     "description": "李智鑫，复旦大学金融科技研究院青年副研究员。研究方向包括金融科技、时序图异常检测、多智能体、金融大模型推理优化与金融风险管理。",
     "intro": [
-      "李智鑫，工学博士，复旦大学金融科技研究院青年副研究员，2024年9月入职复旦大学。现兼任上海市数据跨境应用基础研究创新中心副主任、复旦大学金融科技研究院办公室副主任。",
-      "研究围绕人工智能赋能金融风险管理展开，关注复杂交易网络中的异常识别、跨机构隐私保护与可信协同，以及大模型和多智能体技术在金融场景中的应用。相关工作涉及图异常检测、反洗钱基准构建、联邦学习、合成数据与大模型安全。"
+      "李智鑫，复旦大学金融科技研究院青年副研究员。现任上海市数据跨境应用基础研究创新中心副主任、复旦大学金融科技研究院办公室副主任。",
+      "研究围绕人工智能赋能金融风险管理展开，关注复杂交易网络中的异常识别、跨机构隐私保护与可信协同，以及大模型和多智能体技术在金融场景中的应用。相关工作涉及时序图异常检测、多智能体、可信联邦学习、大模型推理优化与安全。"
     ],
     "keywords": "金融科技；时序图异常检测；多智能体；金融大模型推理优化；金融风险管理；AI4FinTech。",
     "news": [
@@ -29,7 +29,7 @@
       },
       {
         "date": "2026.07",
-        "text": "FedDDIM 获 ITQM 2026 最佳论文奖，本人为通讯作者。",
+        "text": "FedDDIM 获 ITQM 2026 最佳论文奖。",
         "href": "#honors"
       },
       {
@@ -70,7 +70,7 @@
       {
         "year": "2026",
         "title": "ITQM 2026 最佳论文奖",
-        "text": "获奖论文：FedDDIM: A Privacy-Preserving Federated Diffusion Framework for Asymmetric Financial Risk Identification。通讯作者。"
+        "text": "获奖论文：FedDDIM: A Privacy-Preserving Federated Diffusion Framework for Asymmetric Financial Risk Identification。"
       }
     ],
     "service": [
@@ -104,7 +104,23 @@
       }
     ],
     "office": "上海市杨浦区国权北路1566号，湾谷科技园D3栋602房间",
-    "contact_note": "欢迎围绕金融科技、图学习、可信协同及相关交叉研究开展交流。"
+    "contact_note": "欢迎围绕金融科技、图学习、可信协同及相关交叉研究开展交流。",
+    "patents": [
+      {
+        "year": "2025",
+        "title": "基于T-Step聚合算法的异步联邦学习方法及系统",
+        "text": "发明人：吴杰、严明、李智鑫、陈路路。中国发明专利，专利号 ZL202211005250.5，授权公告号 CN115374853B。授权日：2025-08-12。专利权人：复旦大学。",
+        "url": "https://patents.google.com/patent/CN115374853B/zh",
+        "link_label": "授权信息"
+      },
+      {
+        "year": "2022",
+        "title": "一种容器集群管理方法、装置及系统",
+        "text": "发明人：翟孟冬、祖立军、袁航、吕智慧、李智鑫、陈路路。中国发明专利，专利号 ZL202010073214.7，授权公告号 CN111324571B。授权日：2022-06-17。专利权人：中国银联股份有限公司。",
+        "url": "https://patents.google.com/patent/CN111324571B/zh",
+        "link_label": "授权信息"
+      }
+    ]
   },
   "en": {
     "name": "Zhixin Li",
@@ -117,8 +133,8 @@
     ],
     "description": "Zhixin Li is an Associate Researcher (Young Scholar) at Fudan University. His interests include FinTech, temporal graph anomaly detection, multi-agent systems, LLM inference optimization, and financial risk management.",
     "intro": [
-      "I am an Associate Researcher (Young Scholar) at the Institute of Financial Technology, Fudan University. I hold a doctoral degree in engineering and joined Fudan in September 2024. I also serve as Deputy Director of the Shanghai Basic Research Innovation Center for Cross-Border Data Applications and Deputy Director of the Office of the Institute of Financial Technology.",
-      "My research focuses on AI for financial risk management, with an emphasis on anomaly detection in complex transaction networks, privacy-preserving collaboration across institutions, and the application of large language models and multi-agent systems to finance. My work spans graph anomaly detection, anti-money laundering benchmarks, federated learning, synthetic data, and LLM security."
+      "I am an Associate Researcher (Young Scholar) at the Institute of Financial Technology, Fudan University. I currently serve as Deputy Director of the Shanghai Basic Research Innovation Center for Cross-Border Data Applications and Deputy Director of the Office of the Institute of Financial Technology, Fudan University.",
+      "My research focuses on AI-enabled financial risk management, with an emphasis on anomaly detection in complex transaction networks, privacy protection and trustworthy collaboration across institutions, and the application of large language models and multi-agent systems in financial settings. My work spans temporal graph anomaly detection, multi-agent systems, trustworthy federated learning, and LLM inference optimization and security."
     ],
     "keywords": "FinTech; Temporal Graph Anomaly Detection; Multi-Agent Systems; Inference Optimization for Financial Large Language Models; Financial Risk Management; AI4FinTech.",
     "news": [
@@ -129,7 +145,7 @@
       },
       {
         "date": "2026.07",
-        "text": "FedDDIM received the ITQM 2026 Best Paper Award. I am the corresponding author.",
+        "text": "FedDDIM received the ITQM 2026 Best Paper Award.",
         "href": "#honors"
       },
       {
@@ -170,7 +186,7 @@
       {
         "year": "2026",
         "title": "ITQM 2026 Best Paper Award",
-        "text": "FedDDIM: A Privacy-Preserving Federated Diffusion Framework for Asymmetric Financial Risk Identification. Corresponding author."
+        "text": "FedDDIM: A Privacy-Preserving Federated Diffusion Framework for Asymmetric Financial Risk Identification."
       }
     ],
     "service": [
@@ -204,6 +220,22 @@
       }
     ],
     "office": "Room 602, Building D3, Bay Valley Science and Technology Park, 1566 Guoquan North Road, Yangpu District, Shanghai, China",
-    "contact_note": "I welcome academic exchanges and collaboration on FinTech, graph learning, trustworthy collaboration, and related interdisciplinary topics."
+    "contact_note": "I welcome academic exchanges and collaboration on FinTech, graph learning, trustworthy collaboration, and related interdisciplinary topics.",
+    "patents": [
+      {
+        "year": "2025",
+        "title": "Asynchronous Federated Learning Method and System Based on the T-Step Aggregation Algorithm",
+        "text": "Inventors: Jie Wu, Ming Yan, Zhixin Li, Lulu Chen. Chinese invention patent, No. ZL202211005250.5; grant publication CN115374853B. Granted: 12 August 2025. Assignee: Fudan University.",
+        "url": "https://patents.google.com/patent/CN115374853B/en",
+        "link_label": "Patent record"
+      },
+      {
+        "year": "2022",
+        "title": "Container Cluster Management Method, Apparatus, and System",
+        "text": "Inventors: Mengdong Zhai, Lijun Zu, Hang Yuan, Zhihui Lu, Zhixin Li, Lulu Chen. Chinese invention patent, No. ZL202010073214.7; grant publication CN111324571B. Granted: 17 June 2022. Assignee: China UnionPay Co., Ltd.",
+        "url": "https://patents.google.com/patent/CN111324571B/en",
+        "link_label": "Patent record"
+      }
+    ]
   }
 }
