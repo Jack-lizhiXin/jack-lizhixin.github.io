@@ -135,16 +135,7 @@
         "link_label": "授权信息"
       }
     ],
-    "books": [
-      {
-        "title": "金融科技安全导论",
-        "text": "参与编写。"
-      },
-      {
-        "title": "数字金融监管",
-        "text": "参与编写。"
-      }
-    ]
+    "books": []
   },
   "en": {
     "name": "Zhixin Li",
@@ -275,15 +266,6 @@
         "link_label": "Patent record"
       }
     ],
-    "books": [
-      {
-        "title": "Introduction to FinTech Security (金融科技安全导论)",
-        "text": "Contributing writer."
-      },
-      {
-        "title": "Digital Financial Regulation (数字金融监管)",
-        "text": "Contributing writer."
-      }
-    ]
+    "books": []
   }
 }
