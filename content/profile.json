@@ -1,0 +1,209 @@
+{
+  "updated": "2026-10-23",
+  "site_url": "https://jack-lizhixin.github.io",
+  "email": "lizhixin@fudan.edu.cn",
+  "github": "https://github.com/Jack-lizhiXin",
+  "dblp": "https://dblp.org/pid/82/7406-3.html",
+  "orcid": "https://orcid.org/0000-0002-9646-3047",
+  "institution_page": "https://fintech.fudan.edu.cn/info/1005/1367.htm",
+  "zh": {
+    "name": "李智鑫",
+    "other_name": "Zhixin Li",
+    "title": "青年副研究员",
+    "affiliation": "复旦大学 · 金融科技研究院",
+    "affiliation_lines": [
+      "复旦大学",
+      "金融科技研究院"
+    ],
+    "description": "李智鑫，复旦大学金融科技研究院青年副研究员。研究方向包括金融科技、时序图异常检测、多智能体、金融大模型推理优化与金融风险管理。",
+    "intro": [
+      "李智鑫，工学博士，复旦大学金融科技研究院青年副研究员，2024年9月入职复旦大学。现兼任上海市数据跨境应用基础研究创新中心副主任、复旦大学金融科技研究院办公室副主任。",
+      "研究围绕人工智能赋能金融风险管理展开，关注复杂交易网络中的异常识别、跨机构隐私保护与可信协同，以及大模型和多智能体技术在金融场景中的应用。相关工作涉及图异常检测、反洗钱基准构建、联邦学习、合成数据与大模型安全。"
+    ],
+    "keywords": "金融科技；时序图异常检测；多智能体；金融大模型推理优化；金融风险管理；AI4FinTech。",
+    "news": [
+      {
+        "date": "2026",
+        "text": "CR-Aug 与 TransXion 发表于 KDD 2026，分别关注图异常检测与反洗钱图基准。",
+        "href": "#publications"
+      },
+      {
+        "date": "2026.07",
+        "text": "FedDDIM 获 ITQM 2026 最佳论文奖，本人为通讯作者。",
+        "href": "#honors"
+      },
+      {
+        "date": "2026.06",
+        "text": "担任上海市数据跨境应用基础研究创新中心副主任。",
+        "href": "#about"
+      }
+    ],
+    "research": [
+      {
+        "title": "时序图学习与金融风险识别",
+        "text": "面向资金交易和复杂关系网络，研究图异常检测、动态风险识别、反洗钱基准及合成交易数据。"
+      },
+      {
+        "title": "隐私保护与可信协同",
+        "text": "研究联邦学习、隐私保护与跨机构协同建模，关注数据共享受限条件下的金融风险识别。"
+      },
+      {
+        "title": "多智能体与金融风险仿真",
+        "text": "关注金融场景中智能体的交互行为、策略演化与风险传播，探索可控实验与仿真验证方法。"
+      },
+      {
+        "title": "金融大模型与推理优化",
+        "text": "关注大模型在金融场景中的推理效率、安全与可信应用，研究面向具体任务的模型适配和优化。"
+      }
+    ],
+    "projects": [
+      {
+        "title": "非对称金融风险管理的基础理论与方法",
+        "text": "国家自然科学基金重大项目，参与研究。围绕风险智能识别、可信协同与实验验证开展相关工作。"
+      },
+      {
+        "title": "应用系统工程方法构建高水平科技金融体系",
+        "text": "中国工程院战略研究与咨询项目，参与研究。"
+      }
+    ],
+    "honors": [
+      {
+        "year": "2026",
+        "title": "ITQM 2026 最佳论文奖",
+        "text": "获奖论文：FedDDIM: A Privacy-Preserving Federated Diffusion Framework for Asymmetric Financial Risk Identification。通讯作者。"
+      }
+    ],
+    "service": [
+      {
+        "year": "2026",
+        "title": "组织委员会主席",
+        "text": "第七届中国优选法统筹法与经济数学研究会风险管理分会学术年会暨“非对称金融风险管理的基础理论与方法”项目专题研讨会。"
+      },
+      {
+        "year": "2026",
+        "title": "Workshop 联合主席",
+        "text": "ITQM 2026 Workshop 11: Asymmetric Financial Risk: Measurement and Governance（非对称金融风险：测度与治理）。"
+      }
+    ],
+    "teaching": [
+      {
+        "title": "课程教学",
+        "text": "《人工智能的编程基础》《信息系统分析与设计》。"
+      },
+      {
+        "title": "学生指导与育人",
+        "text": "复旦大学计算与智能创新学院学术硕士班辅导员、腾飞书院软件工程班导师；参与“强国之路”思政大课“践行”环节指导。"
+      }
+    ],
+    "talks": [
+      {
+        "year": "2025.12",
+        "title": "金融图数据库领域的落地应用示范探索",
+        "text": "复旦大学—杭州悦数先进金融图技术校企联合研究中心年度总结会。",
+        "url": "https://fintech.fudan.edu.cn/info/1002/1627.htm"
+      }
+    ],
+    "office": "上海市杨浦区国权北路1566号，湾谷科技园D3栋602房间",
+    "contact_note": "欢迎围绕金融科技、图学习、可信协同及相关交叉研究开展交流。"
+  },
+  "en": {
+    "name": "Zhixin Li",
+    "other_name": "李智鑫",
+    "title": "Associate Researcher (Young Scholar)",
+    "affiliation": "Institute of Financial Technology · Fudan University",
+    "affiliation_lines": [
+      "Institute of Financial Technology",
+      "Fudan University"
+    ],
+    "description": "Zhixin Li is an Associate Researcher (Young Scholar) at Fudan University. His interests include FinTech, temporal graph anomaly detection, multi-agent systems, LLM inference optimization, and financial risk management.",
+    "intro": [
+      "I am an Associate Researcher (Young Scholar) at the Institute of Financial Technology, Fudan University. I hold a doctoral degree in engineering and joined Fudan in September 2024. I also serve as Deputy Director of the Shanghai Basic Research Innovation Center for Cross-Border Data Applications and Deputy Director of the Office of the Institute of Financial Technology.",
+      "My research focuses on AI for financial risk management, with an emphasis on anomaly detection in complex transaction networks, privacy-preserving collaboration across institutions, and the application of large language models and multi-agent systems to finance. My work spans graph anomaly detection, anti-money laundering benchmarks, federated learning, synthetic data, and LLM security."
+    ],
+    "keywords": "FinTech; Temporal Graph Anomaly Detection; Multi-Agent Systems; Inference Optimization for Financial Large Language Models; Financial Risk Management; AI4FinTech.",
+    "news": [
+      {
+        "date": "2026",
+        "text": "CR-Aug and TransXion appeared at KDD 2026, addressing graph anomaly detection and realistic anti-money laundering benchmarks.",
+        "href": "#publications"
+      },
+      {
+        "date": "2026.07",
+        "text": "FedDDIM received the ITQM 2026 Best Paper Award. I am the corresponding author.",
+        "href": "#honors"
+      },
+      {
+        "date": "2026.06",
+        "text": "Appointed Deputy Director of the Shanghai Basic Research Innovation Center for Cross-Border Data Applications.",
+        "href": "#about"
+      }
+    ],
+    "research": [
+      {
+        "title": "Temporal graph learning and financial risk identification",
+        "text": "Graph anomaly detection, dynamic risk identification, anti-money laundering benchmarks, and synthetic transaction data for complex financial networks."
+      },
+      {
+        "title": "Privacy-preserving and trustworthy collaboration",
+        "text": "Federated learning, privacy protection, and collaborative modeling across institutions under constraints on data sharing."
+      },
+      {
+        "title": "Multi-agent systems and financial risk simulation",
+        "text": "Agent interactions, strategic behavior, and risk propagation in financial settings, with an emphasis on controlled experimentation and simulation."
+      },
+      {
+        "title": "Financial LLMs and inference optimization",
+        "text": "Efficient inference, security, and trustworthy use of large language models in finance, including task-specific adaptation and optimization."
+      }
+    ],
+    "projects": [
+      {
+        "title": "Fundamental Theories and Methods for Asymmetric Financial Risk Management",
+        "text": "National Natural Science Foundation of China (NSFC) Major Project. Research participation in intelligent risk identification, trustworthy collaboration, and experimental validation."
+      },
+      {
+        "title": "Building a High-Level Technology Finance System through Systems Engineering",
+        "text": "Strategic research and consulting project of the Chinese Academy of Engineering. Research participant."
+      }
+    ],
+    "honors": [
+      {
+        "year": "2026",
+        "title": "ITQM 2026 Best Paper Award",
+        "text": "FedDDIM: A Privacy-Preserving Federated Diffusion Framework for Asymmetric Financial Risk Identification. Corresponding author."
+      }
+    ],
+    "service": [
+      {
+        "year": "2026",
+        "title": "Organizing Committee Chair",
+        "text": "7th Annual Conference of the Risk Management Branch of the Chinese Society of Optimization, Overall Planning and Economic Mathematics, and the Symposium on Fundamental Theories and Methods for Asymmetric Financial Risk Management."
+      },
+      {
+        "year": "2026",
+        "title": "Workshop Co-chair",
+        "text": "ITQM 2026 Workshop 11: Asymmetric Financial Risk: Measurement and Governance."
+      }
+    ],
+    "teaching": [
+      {
+        "title": "Courses",
+        "text": "Programming Fundamentals for Artificial Intelligence; Information Systems Analysis and Design."
+      },
+      {
+        "title": "Student mentoring",
+        "text": "Class counselor for academic master’s students in the College of Computing and Artificial Intelligence, Fudan University; class mentor for Software Engineering students at Tengfei College; faculty mentor for the practical component of Fudan’s “Road to a Strong Nation” course."
+      }
+    ],
+    "talks": [
+      {
+        "year": "2025.12",
+        "title": "Exploring Practical Applications of Financial Graph Databases",
+        "text": "Annual meeting of the Fudan University–Hangzhou Vesoft Joint Research Center for Advanced Financial Graph Technology.",
+        "url": "https://fintech.fudan.edu.cn/info/1002/1627.htm"
+      }
+    ],
+    "office": "Room 602, Building D3, Bay Valley Science and Technology Park, 1566 Guoquan North Road, Yangpu District, Shanghai, China",
+    "contact_note": "I welcome academic exchanges and collaboration on FinTech, graph learning, trustworthy collaboration, and related interdisciplinary topics."
+  }
+}

@@ -1,0 +1,118 @@
+[
+  {
+    "id": "cr-aug",
+    "year": 2026,
+    "title": "CR-Aug: Community Risk-Guided Adaptive Augmentation for Semi-supervised Graph Anomaly Detection",
+    "authors": ["Jing Huang", "Yicun Liu", "Zhixin Li", "Yinan Jing", "Hongfeng Chai"],
+    "venue": "KDD 2026",
+    "citation": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2 (KDD 2026), pp. 1862–1873, 2026.",
+    "doi": "10.1145/3770855.3818003",
+    "links": [
+      {"label": "Paper", "url": "https://doi.org/10.1145/3770855.3818003"}
+    ],
+    "topic_zh": "图异常检测",
+    "topic_en": "Graph anomaly detection"
+  },
+  {
+    "id": "transxion",
+    "year": 2026,
+    "title": "TransXion: A High-Fidelity Graph Benchmark for Realistic Anti-Money Laundering",
+    "authors": ["Keyang Chen", "Mingxuan Jiang", "Yongsheng Zhao", "Zeping Li", "Zaiyuan Chen", "Weiqi Luo", "Zhixin Li", "Sen Liu", "Yinan Jing", "Guangnan Ye", "Xihong Wu", "Hongfeng Chai"],
+    "venue": "KDD 2026",
+    "citation": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2 (KDD 2026), pp. 8707–8718, 2026.",
+    "doi": "10.1145/3770855.3817550",
+    "links": [
+      {"label": "Paper", "url": "https://arxiv.org/abs/2604.17420"},
+      {"label": "Code & data", "url": "https://github.com/chaos-max/TransXion"}
+    ],
+    "topic_zh": "反洗钱与交易网络基准",
+    "topic_en": "Anti-money laundering and transaction-graph benchmarks"
+  },
+  {
+    "id": "fedddim",
+    "year": 2026,
+    "title": "FedDDIM: A Privacy-Preserving Federated Diffusion Framework for Asymmetric Financial Risk Identification",
+    "authors": ["Yicun Liu", "Hongbo Zhao", "Zhixin Li", "Jiaxing Wang", "Xiaoqian Zhu", "Hongfeng Chai"],
+    "venue": "ITQM 2026",
+    "citation": "Procedia Computer Science, vol. 287, pp. 1024–1031, 2026 (ITQM 2026).",
+    "doi": "10.1016/j.procs.2026.08.143",
+    "links": [
+      {"label": "Paper", "url": "https://doi.org/10.1016/j.procs.2026.08.143"}
+    ],
+    "topic_zh": "隐私保护联邦学习与非对称金融风险",
+    "topic_en": "Privacy-preserving federated learning and asymmetric financial risk",
+    "note_zh": "ITQM 2026 最佳论文奖；通讯作者",
+    "note_en": "ITQM 2026 Best Paper Award; corresponding author"
+  },
+  {
+    "id": "jailpo",
+    "year": 2025,
+    "title": "JailPO: A Novel Black-Box Jailbreak Framework via Preference Optimization Against Aligned LLMs",
+    "authors": ["Hongyi Li", "Jiawei Ye", "Jie Wu", "Tianjie Yan", "Chu Wang", "Zhixin Li"],
+    "venue": "AAAI 2025",
+    "citation": "Proceedings of the AAAI Conference on Artificial Intelligence, vol. 39, no. 26, pp. 27419–27427, 2025.",
+    "doi": "10.1609/aaai.v39i26.34953",
+    "links": [
+      {"label": "Paper", "url": "https://ojs.aaai.org/index.php/AAAI/article/view/34953"}
+    ],
+    "topic_zh": "大模型安全",
+    "topic_en": "LLM security"
+  },
+  {
+    "id": "tabtransgan",
+    "year": 2025,
+    "title": "TabTransGAN: A hybrid approach integrating GAN and transformer architectures for tabular data synthesis",
+    "authors": ["Hanbing Zhang", "Yinan Jing", "Fei Zhang", "Zhixin Li", "X. Sean Wang", "Zhenqiang Chen", "Cheng Lv"],
+    "venue": "Information Processing & Management",
+    "citation": "Information Processing & Management, vol. 62, no. 5, article 104220, 2025.",
+    "doi": "10.1016/j.ipm.2025.104220",
+    "links": [
+      {"label": "Paper", "url": "https://doi.org/10.1016/j.ipm.2025.104220"}
+    ],
+    "topic_zh": "表格数据合成",
+    "topic_en": "Tabular data synthesis"
+  },
+  {
+    "id": "tabsal",
+    "year": 2024,
+    "title": "TabSAL: Synthesizing Tabular data with Small agent Assisted Language models",
+    "authors": ["Jiale Li", "Run Qian", "Yandan Tan", "Zhixin Li", "Luyu Chen", "Sen Liu", "Jie Wu", "Hongfeng Chai"],
+    "venue": "Knowledge-Based Systems",
+    "citation": "Knowledge-Based Systems, vol. 304, article 112438, 2024.",
+    "doi": "10.1016/j.knosys.2024.112438",
+    "links": [
+      {"label": "Paper", "url": "https://doi.org/10.1016/j.knosys.2024.112438"},
+      {"label": "Code", "url": "https://github.com/Rosher299/TabSAL_benchmark"}
+    ],
+    "topic_zh": "语言模型与合成数据",
+    "topic_en": "Language models and synthetic data"
+  },
+  {
+    "id": "vaefl",
+    "year": 2024,
+    "title": "VAEFL: Integrating variational autoencoders for privacy preservation and performance retention in federated learning",
+    "authors": ["Zhixin Li", "Yicun Liu", "Jiale Li", "Guangnan Ye", "Hongfeng Chai", "Zhihui Lu", "Jie Wu"],
+    "venue": "Security and Safety",
+    "citation": "Security and Safety, vol. 3, article 2024005, 2024.",
+    "doi": "10.1051/sands/2024005",
+    "links": [
+      {"label": "Paper", "url": "https://doi.org/10.1051/sands/2024005"}
+    ],
+    "topic_zh": "联邦学习与隐私保护",
+    "topic_en": "Federated learning and privacy preservation"
+  },
+  {
+    "id": "asyfed",
+    "year": 2023,
+    "title": "AsyFed: Accelerated Federated Learning With Asynchronous Communication Mechanism",
+    "authors": ["Zhixin Li", "Chunpu Huang", "Keke Gai", "Zhihui Lu", "Jie Wu", "Lulu Chen", "Yangchuan Xu", "Kim-Kwang Raymond Choo"],
+    "venue": "IEEE Internet of Things Journal",
+    "citation": "IEEE Internet of Things Journal, vol. 10, no. 10, pp. 8670–8683, 2023.",
+    "doi": "10.1109/JIOT.2022.3231913",
+    "links": [
+      {"label": "Paper", "url": "https://doi.org/10.1109/JIOT.2022.3231913"}
+    ],
+    "topic_zh": "异步联邦学习",
+    "topic_en": "Asynchronous federated learning"
+  }
+]
