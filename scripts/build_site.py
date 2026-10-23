@@ -79,7 +79,7 @@ def render(lang, prefix, canonical_path):
             continue
         content += section(key, labels[key], details(p[key], labels))
     content += section('contact', labels['contact'], contact)
-    structured = {"@context": "https://schema.org", "@type": "Person", "name": "Zhixin Li", "alternateName": "李智鑫", "jobTitle": PROFILE['en']['title'], "affiliation": {"@type": "Organization", "name": "Fudan University"}, "email": PROFILE['email'], "url": PROFILE['site_url'] + '/', "sameAs": [PROFILE['dblp'], PROFILE['orcid'], PROFILE['github'], PROFILE['institution_page']]}
+    structured = {"@context": "https://schema.org", "@type": "Person", "name": "Zhixin Li", "alternateName": "李智鑫", "jobTitle": PROFILE['en']['title'], "affiliation": {"@type": "Organization", "name": ", ".join(PROFILE["en"]["affiliation_lines"])}, "email": PROFILE['email'], "url": PROFILE['site_url'] + '/', "sameAs": [PROFILE['dblp'], PROFILE['orcid'], PROFILE['github'], PROFILE['institution_page']]}
     structured_json = json.dumps(structured, ensure_ascii=False).replace('</', '<\\/')
     photo_alt = '李智鑫' if lang == 'zh' else 'Zhixin Li'
     return f'''<!doctype html>

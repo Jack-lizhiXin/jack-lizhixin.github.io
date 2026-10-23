@@ -10,17 +10,17 @@
     "name": "李智鑫",
     "other_name": "Zhixin Li",
     "title": "青年副研究员",
-    "affiliation": "复旦大学 · 金融科技研究院",
+    "affiliation": "复旦大学 · 计算与智能创新学院",
     "affiliation_lines": [
       "复旦大学",
-      "金融科技研究院"
+      "计算与智能创新学院"
     ],
-    "description": "李智鑫，复旦大学金融科技研究院青年副研究员。研究方向包括金融科技、时序图异常检测、多智能体、金融大模型推理优化与金融风险管理。",
+    "description": "李智鑫，复旦大学计算与智能创新学院青年副研究员，上海市数据跨境应用基础研究创新中心副主任。研究方向包括金融科技、时序图异常监测、多智能体系统、金融大模型推理优化与金融风险管理。",
     "intro": [
-      "李智鑫，复旦大学金融科技研究院青年副研究员。现任上海市数据跨境应用基础研究创新中心副主任、复旦大学金融科技研究院办公室副主任。",
-      "研究围绕人工智能赋能金融风险管理展开，关注复杂交易网络中的异常识别、跨机构隐私保护与可信协同，以及大模型和多智能体技术在金融场景中的应用。相关工作涉及时序图异常检测、多智能体、可信联邦学习、大模型推理优化与安全。"
+      "复旦大学计算与智能创新学院青年副研究员，上海市数据跨境应用基础研究创新中心副主任。",
+      "研究方向包括金融科技、时序图异常监测、多智能体系统、金融大模型推理优化与金融风险管理。参与国家自然科学基金重大项目“非对称金融风险管理的基础理论与方法”研究。研究成果发表于KDD、AAAI等国际会议及期刊。"
     ],
-    "keywords": "金融科技；时序图异常检测；多智能体；金融大模型推理优化；金融风险管理；AI4FinTech。",
+    "keywords": "金融科技；时序图异常监测；多智能体系统；金融大模型推理优化；金融风险管理。",
     "news": [
       {
         "date": "2026",
@@ -146,17 +146,17 @@
     "name": "Zhixin Li",
     "other_name": "李智鑫",
     "title": "Associate Researcher (Young Scholar)",
-    "affiliation": "Institute of Financial Technology · Fudan University",
+    "affiliation": "College of Computer Science and Artificial Intelligence · Fudan University",
     "affiliation_lines": [
-      "Institute of Financial Technology",
+      "College of Computer Science and Artificial Intelligence",
       "Fudan University"
     ],
-    "description": "Zhixin Li is an Associate Researcher (Young Scholar) at Fudan University. His interests include FinTech, temporal graph anomaly detection, multi-agent systems, LLM inference optimization, and financial risk management.",
+    "description": "Zhixin Li is an Associate Researcher (Young Scholar) at the College of Computer Science and Artificial Intelligence, Fudan University, and Deputy Director of the Shanghai Basic Research Innovation Center for Cross-Border Data Applications. His research interests include FinTech, temporal graph anomaly detection, multi-agent systems, financial LLM inference optimization, and financial risk management.",
     "intro": [
-      "I am an Associate Researcher (Young Scholar) at the Institute of Financial Technology, Fudan University. I currently serve as Deputy Director of the Shanghai Basic Research Innovation Center for Cross-Border Data Applications and Deputy Director of the Office of the Institute of Financial Technology, Fudan University.",
-      "My research focuses on AI-enabled financial risk management, with an emphasis on anomaly detection in complex transaction networks, privacy protection and trustworthy collaboration across institutions, and the application of large language models and multi-agent systems in financial settings. My work spans temporal graph anomaly detection, multi-agent systems, trustworthy federated learning, and LLM inference optimization and security."
+      "I am an Associate Researcher (Young Scholar) at the College of Computer Science and Artificial Intelligence, Fudan University, and Deputy Director of the Shanghai Basic Research Innovation Center for Cross-Border Data Applications.",
+      "My research interests include FinTech, temporal graph anomaly detection, multi-agent systems, inference optimization for financial large language models, and financial risk management. I participate in the National Natural Science Foundation of China (NSFC) Major Project “Fundamental Theories and Methods for Asymmetric Financial Risk Management.” My research has appeared at international conferences such as KDD and AAAI, as well as in academic journals."
     ],
-    "keywords": "FinTech; Temporal Graph Anomaly Detection; Multi-Agent Systems; Inference Optimization for Financial Large Language Models; Financial Risk Management; AI4FinTech.",
+    "keywords": "FinTech; Temporal Graph Anomaly Detection; Multi-Agent Systems; Inference Optimization for Financial Large Language Models; Financial Risk Management.",
     "news": [
       {
         "date": "2026",
@@ -256,7 +256,7 @@
       },
       {
         "title": "Student mentoring",
-        "text": "Class counselor for academic master’s students in the College of Computing and Artificial Intelligence, Fudan University; class mentor for Software Engineering students at Tengfei College; faculty mentor for the practical component of Fudan’s “Road to a Strong Nation” course."
+        "text": "Class counselor for academic master’s students in the College of Computer Science and Artificial Intelligence, Fudan University; class mentor for Software Engineering students at Tengfei College; faculty mentor for the practical component of Fudan’s “Road to a Strong Nation” course."
       }
     ],
     "talks": [],
