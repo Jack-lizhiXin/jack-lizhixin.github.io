@@ -11,8 +11,8 @@ PROFILE = json.loads((ROOT / "content/profile.json").read_text(encoding="utf-8")
 PAPERS = json.loads((ROOT / "content/publications.json").read_text(encoding="utf-8"))
 
 LABELS = {
-    "zh": {"about": "个人简介", "news": "近期动态", "research": "研究方向", "projects": "科研项目", "publications": "代表论文", "patents": "已授权专利", "honors": "获奖荣誉", "service": "学术服务", "teaching": "教学与育人", "talks": "学术报告", "contact": "联系方式", "email": "电子邮箱", "office": "办公室", "institution": "所在单位", "scholarly": "学术主页", "all": "全部", "earlier": "2024及以前", "skip": "跳至正文", "language": "English", "top": "返回顶部", "official": "研究院个人页", "updated": "更新于", "keywords": "研究关键词", "paper": "论文", "code": "代码", "code_data": "代码与数据", "read": "相关报道", "bibliography": "完整书目见 DBLP", "download_bib": "下载 BibTeX", "filter": "按发表年份筛选论文"},
-    "en": {"about": "About", "news": "News", "research": "Research", "projects": "Projects", "publications": "Publications", "patents": "Granted Patents", "honors": "Honors", "service": "Service", "teaching": "Teaching", "talks": "Talks", "contact": "Contact", "email": "Email", "office": "Office", "institution": "Affiliation", "scholarly": "Profiles", "all": "All", "earlier": "2024 & earlier", "skip": "Skip to content", "language": "中文", "top": "Back to top", "official": "Institutional profile", "updated": "Updated", "keywords": "Research interests", "paper": "Paper", "code": "Code", "code_data": "Code & data", "read": "Event report", "bibliography": "Full bibliography on DBLP", "download_bib": "Download BibTeX", "filter": "Filter publications by year"}
+    "zh": {"about": "个人简介", "news": "近期动态", "research": "研究方向", "projects": "科研项目", "publications": "代表论文", "patents": "已授权专利", "books": "图书编写（参与）", "honors": "获奖荣誉", "service": "学术服务", "teaching": "教学与育人", "talks": "学术报告", "contact": "联系方式", "email": "电子邮箱", "office": "办公室", "institution": "所在单位", "scholarly": "学术主页", "all": "全部", "earlier": "2024及以前", "skip": "跳至正文", "language": "English", "top": "返回顶部", "official": "研究院个人页", "updated": "更新于", "keywords": "研究关键词", "paper": "论文", "code": "代码", "code_data": "代码与数据", "read": "相关报道", "bibliography": "完整书目见 DBLP", "download_bib": "下载 BibTeX", "filter": "按发表年份筛选论文"},
+    "en": {"about": "About", "news": "News", "research": "Research", "projects": "Projects", "publications": "Publications", "patents": "Granted Patents", "books": "Book Contributions", "honors": "Honors", "service": "Service", "teaching": "Teaching", "talks": "Talks", "contact": "Contact", "email": "Email", "office": "Office", "institution": "Affiliation", "scholarly": "Profiles", "all": "All", "earlier": "2024 & earlier", "skip": "Skip to content", "language": "中文", "top": "Back to top", "official": "Institutional profile", "updated": "Updated", "keywords": "Research interests", "paper": "Paper", "code": "Code", "code_data": "Code & data", "read": "Event report", "bibliography": "Full bibliography on DBLP", "download_bib": "Download BibTeX", "filter": "Filter publications by year"}
 }
 
 
@@ -46,7 +46,9 @@ def publications(lang, labels, prefix):
     rows = []
     for p in PAPERS:
         doi_url = 'https://doi.org/' + p['doi']
-        authors = ', '.join(f'<strong>{esc(a)}</strong>' if a == 'Zhixin Li' else esc(a) for a in p['authors'])
+        paper_title = p.get('title_' + lang, p['title'])
+        citation = p.get('citation_' + lang, p['citation'])
+        authors = ', '.join(f'<strong>{esc(a)}</strong>' if a in {'Zhixin Li', '李智鑫'} else esc(a) for a in p.get('authors_' + lang, p['authors']))
         links = [anchor(doi_url, 'DOI')]
         for link in p.get('links', []):
             if link['url'] == doi_url:
@@ -55,7 +57,7 @@ def publications(lang, labels, prefix):
             links.append(anchor(link['url'], display))
         topic = p.get('topic_' + lang, '')
         note = f'<span class="pub-award">{esc(p["note_" + lang])}</span>' if p.get('note_' + lang) else ''
-        rows.append(f'<li class="publication" data-year="{p["year"]}" id="paper-{esc(p["id"])}"><span class="pub-venue">{esc(p["venue"])}</span><h3 class="pub-title">{anchor(doi_url, p["title"])}</h3><p class="pub-authors">{authors}</p><p class="pub-meta">{esc(p["citation"])}</p><p class="pub-meta">{esc(topic)}</p><p class="pub-links">{" ".join(links)}{note}</p></li>')
+        rows.append(f'<li class="publication" data-year="{p["year"]}" id="paper-{esc(p["id"])}"><span class="pub-venue">{esc(p.get("venue_" + lang, p["venue"]))}</span><h3 class="pub-title">{anchor(doi_url, paper_title)}</h3><p class="pub-authors">{authors}</p><p class="pub-meta">{esc(citation)}</p><p class="pub-meta">{esc(topic)}</p><p class="pub-links">{" ".join(links)}{note}</p></li>')
     bibliography = f'<p class="section-note">{anchor(PROFILE["dblp"], labels["bibliography"])} · {anchor(prefix + "publications.bib", labels["download_bib"], " download")}</p>'
     return bibliography + toolbar + '<ol class="publication-list" id="publication-list">' + '\n'.join(rows) + '</ol>'
 
@@ -72,7 +74,7 @@ def render(lang, prefix, canonical_path):
     research = '<ul class="research-list">' + ''.join(f'<li><h3>{esc(r["title"])}</h3><p>{esc(r["text"])}</p></li>' for r in p['research']) + '</ul>'
     contact = f'<p>{esc(p["contact_note"])}</p><dl class="contact-list"><dt>{esc(labels["email"])}</dt><dd>{anchor("mailto:" + PROFILE["email"], PROFILE["email"])}</dd><dt>{esc(labels["office"])}</dt><dd>{esc(p["office"])}</dd><dt>{esc(labels["institution"])}</dt><dd>{esc(p["affiliation"])}</dd><dt>{esc(labels["scholarly"])}</dt><dd>{anchor(PROFILE["dblp"], "DBLP")} · {anchor(PROFILE["orcid"], "ORCID")} · {anchor(PROFILE["github"], "GitHub")}</dd></dl>'
     content = about + section('news', labels['news'], news) + section('research', labels['research'], research) + section('projects', labels['projects'], details(p['projects'], labels)) + section('publications', labels['publications'], publications(lang, labels, prefix))
-    for key in ['patents', 'honors', 'service', 'teaching', 'talks']:
+    for key in ['books', 'patents', 'honors', 'service', 'teaching', 'talks']:
         content += section(key, labels[key], details(p[key], labels))
     content += section('contact', labels['contact'], contact)
     structured = {"@context": "https://schema.org", "@type": "Person", "name": "Zhixin Li", "alternateName": "李智鑫", "jobTitle": PROFILE['en']['title'], "affiliation": {"@type": "Organization", "name": "Fudan University"}, "email": PROFILE['email'], "url": PROFILE['site_url'] + '/', "sameAs": [PROFILE['dblp'], PROFILE['orcid'], PROFILE['github'], PROFILE['institution_page']]}

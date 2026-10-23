@@ -59,11 +59,39 @@
     "projects": [
       {
         "title": "非对称金融风险管理的基础理论与方法",
-        "text": "国家自然科学基金重大项目，参与研究。围绕风险智能识别、可信协同与实验验证开展相关工作。"
+        "text": "国家自然科学基金重大项目"
+      },
+      {
+        "title": "金融欺诈及支付受理市场违规侦测与处置技术研究与应用示范",
+        "text": "国家重点研发计划项目"
+      },
+      {
+        "title": "金融市场AI资金交易技术研究与应用",
+        "text": "长三角科技创新共同体联合攻关项目"
+      },
+      {
+        "title": "基于下一代人工智能的金融风险监测智能化关键技术研究",
+        "text": "长三角科技创新共同体联合攻关项目"
+      },
+      {
+        "title": "大数据背景下基于联邦学习的小微企业信用风险评估研究",
+        "text": "国家自然科学基金重大研究计划重点项目"
+      },
+      {
+        "title": "大数据情境下的国家级信用平台及金融信用创新应用研究—长三角征信链创新示范应用与实践",
+        "text": "国家自然科学基金重大研究计划集成项目"
       },
       {
         "title": "应用系统工程方法构建高水平科技金融体系",
-        "text": "中国工程院战略研究与咨询项目，参与研究。"
+        "text": "中国工程院战略研究与咨询项目"
+      },
+      {
+        "title": "数字化转型背景下金融风险监测与预警体系战略研究",
+        "text": "中国工程院战略研究与咨询项目"
+      },
+      {
+        "title": "金融数据安全治理智能化的战略研究",
+        "text": "中国工程院战略研究与咨询项目"
       }
     ],
     "honors": [
@@ -95,14 +123,7 @@
         "text": "复旦大学计算与智能创新学院学术硕士班辅导员、腾飞书院软件工程班导师；参与“强国之路”思政大课“践行”环节指导。"
       }
     ],
-    "talks": [
-      {
-        "year": "2025.12",
-        "title": "金融图数据库领域的落地应用示范探索",
-        "text": "复旦大学—杭州悦数先进金融图技术校企联合研究中心年度总结会。",
-        "url": "https://fintech.fudan.edu.cn/info/1002/1627.htm"
-      }
-    ],
+    "talks": [],
     "office": "上海市杨浦区国权北路1566号，湾谷科技园D3栋602房间",
     "contact_note": "欢迎围绕金融科技、图学习、可信协同及相关交叉研究开展交流。",
     "patents": [
@@ -112,13 +133,16 @@
         "text": "发明人：吴杰、严明、李智鑫、陈路路。中国发明专利，专利号 ZL202211005250.5，授权公告号 CN115374853B。授权日：2025-08-12。专利权人：复旦大学。",
         "url": "https://patents.google.com/patent/CN115374853B/zh",
         "link_label": "授权信息"
+      }
+    ],
+    "books": [
+      {
+        "title": "金融科技安全导论",
+        "text": "参与编写。"
       },
       {
-        "year": "2022",
-        "title": "一种容器集群管理方法、装置及系统",
-        "text": "发明人：翟孟冬、祖立军、袁航、吕智慧、李智鑫、陈路路。中国发明专利，专利号 ZL202010073214.7，授权公告号 CN111324571B。授权日：2022-06-17。专利权人：中国银联股份有限公司。",
-        "url": "https://patents.google.com/patent/CN111324571B/zh",
-        "link_label": "授权信息"
+        "title": "数字金融监管",
+        "text": "参与编写。"
       }
     ]
   },
@@ -175,11 +199,39 @@
     "projects": [
       {
         "title": "Fundamental Theories and Methods for Asymmetric Financial Risk Management",
-        "text": "National Natural Science Foundation of China (NSFC) Major Project. Research participation in intelligent risk identification, trustworthy collaboration, and experimental validation."
+        "text": "National Natural Science Foundation of China (NSFC) Major Project"
+      },
+      {
+        "title": "Research and Application Demonstration of Technologies for Detecting and Addressing Financial Fraud and Payment Acceptance Market Violations",
+        "text": "National Key R&D Program of China"
+      },
+      {
+        "title": "Research and Application of AI Technologies for Financial Market Transactions",
+        "text": "Joint Research Project of the Yangtze River Delta Science and Technology Innovation Community"
+      },
+      {
+        "title": "Key Technologies for Intelligent Financial Risk Monitoring Based on Next-Generation Artificial Intelligence",
+        "text": "Joint Research Project of the Yangtze River Delta Science and Technology Innovation Community"
+      },
+      {
+        "title": "Credit Risk Assessment for Small and Micro Enterprises Based on Federated Learning in the Context of Big Data",
+        "text": "Key Project under an NSFC Major Research Plan"
+      },
+      {
+        "title": "National Credit Platforms and Innovative Financial Credit Applications in the Context of Big Data: Demonstration and Practice of the Yangtze River Delta Credit Reporting Blockchain",
+        "text": "Integrated Project under an NSFC Major Research Plan"
       },
       {
         "title": "Building a High-Level Technology Finance System through Systems Engineering",
-        "text": "Strategic research and consulting project of the Chinese Academy of Engineering. Research participant."
+        "text": "Strategic Research and Consulting Project of the Chinese Academy of Engineering"
+      },
+      {
+        "title": "Strategic Research on Financial Risk Monitoring and Early Warning Systems in the Context of Digital Transformation",
+        "text": "Strategic Research and Consulting Project of the Chinese Academy of Engineering"
+      },
+      {
+        "title": "Strategic Research on Intelligent Financial Data Security Governance",
+        "text": "Strategic Research and Consulting Project of the Chinese Academy of Engineering"
       }
     ],
     "honors": [
@@ -211,14 +263,7 @@
         "text": "Class counselor for academic master’s students in the College of Computing and Artificial Intelligence, Fudan University; class mentor for Software Engineering students at Tengfei College; faculty mentor for the practical component of Fudan’s “Road to a Strong Nation” course."
       }
     ],
-    "talks": [
-      {
-        "year": "2025.12",
-        "title": "Exploring Practical Applications of Financial Graph Databases",
-        "text": "Annual meeting of the Fudan University–Hangzhou Vesoft Joint Research Center for Advanced Financial Graph Technology.",
-        "url": "https://fintech.fudan.edu.cn/info/1002/1627.htm"
-      }
-    ],
+    "talks": [],
     "office": "Room 602, Building D3, Bay Valley Science and Technology Park, 1566 Guoquan North Road, Yangpu District, Shanghai, China",
     "contact_note": "I welcome academic exchanges and collaboration on FinTech, graph learning, trustworthy collaboration, and related interdisciplinary topics.",
     "patents": [
@@ -228,13 +273,16 @@
         "text": "Inventors: Jie Wu, Ming Yan, Zhixin Li, Lulu Chen. Chinese invention patent, No. ZL202211005250.5; grant publication CN115374853B. Granted: 12 August 2025. Assignee: Fudan University.",
         "url": "https://patents.google.com/patent/CN115374853B/en",
         "link_label": "Patent record"
+      }
+    ],
+    "books": [
+      {
+        "title": "Introduction to FinTech Security (金融科技安全导论)",
+        "text": "Contributing writer."
       },
       {
-        "year": "2022",
-        "title": "Container Cluster Management Method, Apparatus, and System",
-        "text": "Inventors: Mengdong Zhai, Lijun Zu, Hang Yuan, Zhihui Lu, Zhixin Li, Lulu Chen. Chinese invention patent, No. ZL202010073214.7; grant publication CN111324571B. Granted: 17 June 2022. Assignee: China UnionPay Co., Ltd.",
-        "url": "https://patents.google.com/patent/CN111324571B/en",
-        "link_label": "Patent record"
+        "title": "Digital Financial Regulation (数字金融监管)",
+        "text": "Contributing writer."
       }
     ]
   }

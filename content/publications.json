@@ -130,5 +130,48 @@
     ],
     "topic_zh": "表格数据合成",
     "topic_en": "Tabular data synthesis"
+  },
+  {
+    "id": "blockchain-aml-survey",
+    "year": 2025,
+    "title": "区块链系统中反洗钱技术研究综述",
+    "title_en": "A Survey on Anti-Money Laundering Techniques in Blockchain Systems",
+    "authors": [
+      "Leyuan Liu",
+      "Xiangye Li",
+      "Tian Lan",
+      "Yakun Cheng",
+      "Wei Chen",
+      "Zhixin Li",
+      "Sheng Cao",
+      "Weili Han",
+      "Xiaosong Zhang",
+      "Hongfeng Chai"
+    ],
+    "authors_zh": [
+      "刘乐源",
+      "李湘叶",
+      "蓝天",
+      "程亚坤",
+      "陈伟",
+      "李智鑫",
+      "曹晟",
+      "韩伟力",
+      "张小松",
+      "柴洪峰"
+    ],
+    "venue": "中国工程科学",
+    "citation": "中国工程科学，2025，27(2)：287–303。",
+    "doi": "10.15302/J-SSCAE-2024.11.025",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://www.engineering.org.cn/sscae/CN/1160106875662426752"
+      }
+    ],
+    "topic_zh": "区块链反洗钱与金融安全",
+    "topic_en": "Blockchain anti-money laundering and financial security",
+    "venue_en": "Strategic Study of CAE",
+    "citation_en": "Strategic Study of CAE, vol. 27, no. 2, pp. 287–303, 2025."
   }
 ]
