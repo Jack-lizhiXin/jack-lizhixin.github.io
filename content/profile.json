@@ -135,7 +135,12 @@
         "link_label": "授权信息"
       }
     ],
-    "books": []
+    "books": [
+      {
+        "title": "金融科技安全导论",
+        "text": ""
+      }
+    ]
   },
   "en": {
     "name": "Zhixin Li",
@@ -266,6 +271,11 @@
         "link_label": "Patent record"
       }
     ],
-    "books": []
+    "books": [
+      {
+        "title": "Introduction to FinTech Security (金融科技安全导论)",
+        "text": ""
+      }
+    ]
   }
 }
