@@ -70,10 +70,4 @@ python3 scripts/build_site.py
 
 ## 内容与来源
 
-基本身份参照 [复旦大学金融科技研究院个人页](https://fintech.fudan.edu.cn/info/1005/1367.htm)，个人照片由本人提供；研究关键词、现任职务、奖项、会议服务和办公室信息采用本人最新确认的材料。英文机构、项目及课程名称为对应中文名称的译法。
-
-论文的完整题名、作者顺序与发表信息通过出版方、作者公开论文和 [DBLP作者页](https://dblp.org/pid/82/7406-3.html) 核对。每篇论文附有 DOI；FedDDIM 的奖项采用本人确认材料。已授权专利仅列2025年及以后授权条目，依据授权公告文本及专利记录列示，均附核对链接。新增《中国工程科学》论文的作者、年份及书目信息依据期刊官网核对。科研项目仅展示题目与项目类型，不包含金额、项目编号、职责、执行状态或任务细节。专著仅列本人指定的《金融科技安全导论》，不补充未核实的作者或出版信息。学术报告条目暂留空。
-
-布局参考黄萱菁老师主页的学术信息组织方式；HTML、CSS和交互代码为本页独立编写，没有复制参考网站源码或照片。个人照片及论文相关内容的权利归原权利人所有。
-
-GitHub Pages 官方说明：[创建个人站点](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)、[配置发布来源](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)。
+基本身份参照 [复旦大学金融科技研究院个人页](https://fintech.fudan.edu.cn/info/1005/1367.htm)，个人照片及论文相关内容的权利归原权利人所有。
