@@ -83,6 +83,32 @@
     "note_en": "ITQM 2026 Best Paper Award"
   },
   {
+    "id": "rule-graph-alignment",
+    "year": 2026,
+    "title": "Rule-graph alignment via optimal transport for weakly supervised anomaly detection on transaction graphs",
+    "authors": [
+      "Qiuyang Zhang",
+      "Keyang Chen",
+      "Mingxuan Jiang",
+      "Yuan Shui",
+      "Yandan Tan",
+      "Zhixin Li",
+      "Hongbin Zhu",
+      "Hongfeng Chai"
+    ],
+    "venue": "Journal of King Saud University Computer and Information Sciences",
+    "citation": "Journal of King Saud University Computer and Information Sciences, vol. 38, article 976, 2026.",
+    "doi": "10.1007/s44443-026-01381-3",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://link.springer.com/article/10.1007/s44443-026-01381-3"
+      }
+    ],
+    "topic_zh": "交易图弱监督异常检测与最优传输",
+    "topic_en": "Weakly supervised transaction-graph anomaly detection and optimal transport"
+  },
+  {
     "id": "jailpo",
     "year": 2025,
     "title": "JailPO: A Novel Black-Box Jailbreak Framework via Preference Optimization Against Aligned LLMs",

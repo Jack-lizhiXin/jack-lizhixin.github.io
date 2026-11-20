@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23",
+  "updated": "2026-11-20",
   "site_url": "https://jack-lizhixin.github.io",
   "email": "lizhixin@fudan.edu.cn",
   "github": "https://github.com/Jack-lizhiXin",
@@ -22,6 +22,16 @@
     ],
     "keywords": "金融科技；时序图异常检测；多智能体；金融大模型推理优化；金融风险管理；AI4FinTech。",
     "news": [
+      {
+        "date": "2026.11.07",
+        "text": "牵头编制的《中国金融科技专利技术白皮书（2026）》在广州举行的第三届CCF中国数字金融大会发布。",
+        "href": "https://fintech.fudan.edu.cn/info/1002/1658.htm"
+      },
+      {
+        "date": "2026.11.02",
+        "text": "交易图弱监督异常检测论文发表于 Journal of King Saud University Computer and Information Sciences。",
+        "href": "#paper-rule-graph-alignment"
+      },
       {
         "date": "2026",
         "text": "CR-Aug 与 TransXion 发表于 KDD 2026，分别关注图异常检测与反洗钱图基准。",
@@ -158,6 +168,16 @@
     ],
     "keywords": "FinTech; Temporal Graph Anomaly Detection; Multi-Agent Systems; Inference Optimization for Financial Large Language Models; Financial Risk Management; AI4FinTech.",
     "news": [
+      {
+        "date": "2026.11.07",
+        "text": "Led the compilation of the China FinTech Patent Technology White Paper (2026), released at the Third CCF China Digital Finance Conference in Guangzhou.",
+        "href": "https://fintech.fudan.edu.cn/info/1002/1658.htm"
+      },
+      {
+        "date": "2026.11.02",
+        "text": "Our paper on weakly supervised transaction-graph anomaly detection was published in the Journal of King Saud University Computer and Information Sciences.",
+        "href": "#paper-rule-graph-alignment"
+      },
       {
         "date": "2026",
         "text": "CR-Aug and TransXion appeared at KDD 2026, addressing graph anomaly detection and realistic anti-money laundering benchmarks.",
